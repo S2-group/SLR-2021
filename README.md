@@ -10,9 +10,10 @@ The contents of this repository can be used to:
 
 This study has been designed, performed, and reported by the following researchers:
 
+- Michel Albonico (Federal University of Technology, Paraná - Brazil)
 - Milica Dordevic (Vrije Universiteit Amsterdam - The Netherlands)
 - Engel Hamer (Vrije Universiteit Amsterdam - The Netherlands)
-- Michel Albonico (Federal University of Technology, Paraná - Brazil)
+- Ivano Malavolta (Vrije Universiteit Amsterdam - The Netherlands)
 
 ### Overview of the replication package
 ---
@@ -21,6 +22,6 @@ This replication package is structured as follows:
 
 ```
 ./scripts         The scripts used for automating the search process.
-./data_analysis   The Jupyter notebooks used for producing all figures in the paper,
+./data_analysis   The Jupyter notebooks used for producing all figures in the paper.
 ./data_extraction The spreadsheets used in the data extraction stage.
 ```
