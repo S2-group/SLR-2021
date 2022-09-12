@@ -21,7 +21,8 @@ This study has been designed, performed, and reported by the following researche
 This replication package is structured as follows:
 
 ```
-./scripts         The scripts used for automating the search process.
-./data_analysis   The Jupyter notebooks used for producing all figures in the paper.
-./data_extraction The spreadsheets used in the data extraction stage.
+./scripts                The scripts used for automating the search process.
+./data_analysis          The Jupyter notebooks used for producing all figures in the paper.
+./data_extraction        The spreadsheets used in the data extraction stage.
+./data_analysis_JSS.csv  The final data analysis spreadsheet with all of the data points.
 ```
