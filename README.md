@@ -23,5 +23,5 @@ This replication package is structured as follows:
 ```
 ./scripts                The scripts used for automating the search process.
 ./data_analysis          The Jupyter notebooks used for producing all figures in the paper.
-./data_analysis_JSS.csv  The final data analysis spreadsheet with all of the data points.
+./data                   All the spreadsheets containing the data points and the manual selection.
 ```
