@@ -25,3 +25,8 @@ This replication package is structured as follows:
 ./data_analysis          The Jupyter notebooks used for producing all figures in the paper.
 ./data                   All the spreadsheets with the data points and the manual selection.
 ```
+
+
+### Studies Classification
+
+The complete list of studies classification is available [here](https://github.com/S2-group/SLR_SE_ROS_2022/blob/main/data_analysis/studies_classification.pdf).
