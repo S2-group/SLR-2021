@@ -13,11 +13,6 @@ import os
 import time
 import shutil
 
-papers = [
-    ('journals/pacmpl/GhoshHMM20', 'https://doi.org/10.1145/3428300'),
-    ('journals/pacmpl/MajumdarYZ20', 'https://doi.org/10.1145/3428202')
-]
-
 def read_csv(file_path):
     papers = []
     with open(file_path, 'r') as csv_file:
