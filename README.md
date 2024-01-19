@@ -40,7 +40,7 @@ This replication package is structured as follows:
 
 ```
 ./scripts                The scripts used for automating the search process.
-./data_analysis          The Jupyter notebooks used for producing all figures in the paper.
+./data_analysis          The Jupyter notebooks are used for producing all figures in the paper.
 ./data                   All the spreadsheets with the data points and the manual selection.
 ```
 
@@ -48,3 +48,29 @@ This replication package is structured as follows:
 ### Studies Classification
 
 The complete list of studies classification is available [here](https://github.com/S2-group/SLR_SE_ROS_2022/blob/main/data_analysis/studies_classification.pdf).
+
+
+### Crawling Papers
+
+If you are interested in replicating our papers' crawling, here are a few details that can help you.
+
+You must be in the `scripts` folder:
+
+```bash
+$ cd scripts/
+```
+
+Then, you must download the last [DBLP snapshot](https://dblp.org/xml/release/) and extract it in the `scripts` folder, and also download a compatible document type definition (DTD) file - usually the first next to the downloaded XML file.
+
+Now, it is time to set everything (snapshot file, year range, etc.) at the beginning of the `dblp_search.py` file. We plan to use a properties file for this shortly.
+
+Once everything is set, you run the `dblp_search.py` script, and the papers should be selected.
+
+```bash
+$ python3 dblp_search.py > papers.csv
+```
+
+Now, the papers can be downloaded by using the next script [WORK IN PROGRESS HERE]:
+```bash
+$ python3 retrive_pdfs.py < papers.csv
+```
