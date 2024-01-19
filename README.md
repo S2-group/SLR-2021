@@ -18,7 +18,7 @@ This study has been designed, performed, and reported by the following researche
 For any information, interested researchers can contact us by sending an email to any of the investigators listed above.
 
 ## How to cite the dataset
-If the dataset or the results of our study are helping your research, consider to cite our study as follows, thanks!
+If the dataset or the results of our study are helping your research, consider citing our study as follows, thanks!
 
 ```
 @article{JSS_ROS_2022,
@@ -60,17 +60,18 @@ You must be in the `scripts` folder:
 $ cd scripts/
 ```
 
-Then, you must download the last [DBLP snapshot](https://dblp.org/xml/release/) and extract it in the `scripts` folder, and also download a compatible document type definition (DTD) file - usually the first next to the downloaded XML file.
+Then, you must download the last [DBLP snapshot](https://dblp.org/xml/release/) and extract it in the `scripts` folder (it's a big file > 4GB), and download the compatible document type definition (DTD) file - usually the first one after the downloaded XML file.
 
 Now, it is time to set everything (snapshot file, year range, etc.) at the beginning of the `dblp_search.py` file. We plan to use a properties file for this shortly.
 
-Once everything is set, you run the `dblp_search.py` script, and the papers should be selected.
+Once everything is set, you run the `dblp_search.py` script, and the papers should be selected (it will be a bit long given the file size).
 
 ```bash
 $ python3 dblp_search.py > papers.csv
 ```
 
-Now, the papers can be downloaded by using the next script [WORK IN PROGRESS HERE]:
+Finally, you can download all the PDFs for posterior paper analysis:
+
 ```bash
-$ python3 retrive_pdfs.py < papers.csv
+$ python3 retrive_pdfs.py papers.csv
 ```
